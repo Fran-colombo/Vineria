@@ -1,0 +1,6 @@
+@Vineria_HostAddress = http://localhost:5031
+
+GET {{Vineria_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
