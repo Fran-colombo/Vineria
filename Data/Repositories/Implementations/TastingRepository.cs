@@ -22,14 +22,6 @@ namespace Data.Repositories.Implementations
             return _context.Tastings.Include(t => t.Wines).Where(t => t.Date > DateTime.Now).ToList();
         }
 
-        //public void AddTastingWithExistingWines(Tasting tasting, List<int> wineIds)
-        //{
-        //    var wines = _context.Wines.Where(w => wineIds.Contains(w.Id)).ToList();
-        //    tasting.Wines = wines;
-
-        //    _context.Tastings.Add(tasting);
-        //    _context.SaveChanges();
-        //}
 
         public int AddTasting(Tasting tasting)
         {

@@ -42,9 +42,7 @@ namespace Data.Repositories.Implementations
         }
         public List<Wine> GetWinesByNames(List<string> names)
         {
-            return _context.Wines
-                .Where(w => names.Contains(w.Name))
-                .ToList();
+            return _context.Wines.Where(w => names.Contains(w.Name)).ToList();
         }
 
         public int AddWine(Wine wine)
