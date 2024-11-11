@@ -57,21 +57,7 @@ namespace Services.Implementations
             {
                 throw new ArgumentException("The Guests List that you are trying to update doesn´t exist");
             }
-            /*
-                 {
-        if (guests == null || !guests.Any())
-        {
-            throw new ArgumentException("Guest list cannot be empty.");
-        }
 
-        var tastingExists = _repository.GetAllTastings().Any(t => t.Id == id);
-        if (!tastingExists)
-        {
-            throw new ArgumentException("The Guests List that you are trying to update doesn’t exist");
-        }
-
-        _repository.UpdateGuestList(id, guests);
-    }*/
         }
 
     }
